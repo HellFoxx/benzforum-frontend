@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import axios from "axios";
 import NewsItem from "./news-item";
+import '../css/news.css';
 
 export default function News() {
 

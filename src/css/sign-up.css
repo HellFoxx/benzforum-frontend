@@ -1,0 +1,29 @@
+/* --------- SIGN-UP --------- */
+
+.content {
+    margin-top: 80px;
+  }
+  
+  .sign-up {
+    width: 100%;
+  }
+  
+  .sign-up > h1 {
+    padding: 20px 0;
+  }
+  
+  .user-image-form {
+    background-image: url("https://vk.com/images/camera_200.png");
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    background-position: center;
+  }
+  
+  .sign-up input[type=text],
+  .sign-up input[type=email],
+  .sign-up input[type=password] {
+    background-color: #323233;
+    border-color: #323233;
+    color: #CCC;
+  }

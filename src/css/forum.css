@@ -1,0 +1,13 @@
+/* --------- FORUM --------- */
+
+.discuss-section {
+    margin-top: 80px;
+}
+
+.discuss-section > h1 {
+    padding: 20px 0;
+}
+
+.discuss-section a {
+    color: #CCC;
+}

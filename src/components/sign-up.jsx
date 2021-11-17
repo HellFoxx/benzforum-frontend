@@ -1,5 +1,7 @@
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import axios from "axios";
+import { useNavigate } from 'react-router-dom';
+import '../css/sign-up.css';
 
 export default function SignUp() {
 
@@ -12,6 +14,8 @@ export default function SignUp() {
         passwordRepeat : "",
     });
 
+    const navigate = useNavigate();
+
     function submit(e) {
         e.preventDefault();
         axios.post("http://localhost:8081/user/signup", {
@@ -22,8 +26,11 @@ export default function SignUp() {
             password : data.password,
             passwordRepeat : data.passwordRepeat
         })
-        .then(res => {
-            console.log(res.data);
+        .then(res => {   
+            navigate.push("/news");
+        })
+        .catch(err => {
+            console.log(err);
         });
     }
 

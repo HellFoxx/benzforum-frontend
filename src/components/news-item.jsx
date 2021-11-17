@@ -1,4 +1,5 @@
 import React from "react";
+import '../css/news.css';
 
 export default function NewsItem(props) {
     var externReff = React.createRef();

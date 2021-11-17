@@ -1,0 +1,48 @@
+/* --------- HEADER --------- */
+
+.header {
+    background-color: #323233;
+    padding: 5px 0;
+    color: #CCC;
+    position: fixed;
+    top : 0;
+    width: 100%;
+  }
+  
+  .main-menu {
+    color: aliceblue;
+    background-color: #323233;
+    padding: 5px 0;
+  }
+  
+  .logo {
+    color: #CCC;
+  }
+  
+  .main-menu > .nav {
+    margin: auto 0;
+  }
+  
+  .nav-link, .btn, .btn-outline-light {
+    color: #CCC;
+  
+  }
+  
+  .user-btns {
+    margin: auto 0;
+  
+  }
+  
+  .user-btns > .btn {
+    width: 37%;
+  }
+  
+  .registr {
+    margin-left: 4%;
+    align-self: flex-end;
+    color: #323233;
+    background-color: #CCC;
+    border-color: #CCC;
+  }
+  
+  
