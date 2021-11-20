@@ -1,5 +1,6 @@
 import React from "react";
 import '../css/header.css';
+import { NavLink } from "react-router-dom";
 
 export default function Header() {
     return (
@@ -12,22 +13,22 @@ export default function Header() {
                     <div className="main-menu col-xl-6">
                         <ul className="nav justify-content-center">
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/news">Новости</a>  
+                                    <NavLink to="/news" className="nav-link" >Новости</NavLink>  
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/forum">Форум</a>
+                                    <NavLink to="/forum" className="nav-link" >Форум</NavLink> 
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/club">Клуб</a>
+                                    <NavLink to="/club" className="nav-link" >Клуб</NavLink> 
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/mercedes">Мерседес</a>
+                                    <NavLink to="/mercedes" className="nav-link" >Мерседес</NavLink> 
                                 </li>
                         </ul>
                     </div>
                     <div className="col-xl-3 user-btns row justify-content-end">
-                        <a href="/signin" className="btn btn-outline-light sign-in col-6">Вход</a>
-                        <a href="/signup" className="btn btn-light registr col-6">Регистрация</a>
+                        <NavLink to="/signin" className="btn btn-outline-light sign-in col-6" >Войти</NavLink> 
+                        <NavLink to="/signup" className="btn btn-light registr col-6" >Регистрация</NavLink> 
                     </div>
                 </div>
             </div>

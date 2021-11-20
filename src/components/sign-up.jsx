@@ -14,7 +14,7 @@ export default function SignUp() {
         passwordRepeat : "",
     });
 
-    const navigate = useNavigate();
+    let navigate = useNavigate();
 
     function submit(e) {
         e.preventDefault();
@@ -27,7 +27,7 @@ export default function SignUp() {
             passwordRepeat : data.passwordRepeat
         })
         .then(res => {   
-            navigate.push("/news");
+            navigate("/news");
         })
         .catch(err => {
             console.log(err);

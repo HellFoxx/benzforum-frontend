@@ -1,0 +1,35 @@
+.message {
+    min-height: 100px;
+    background-color: #323233;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.user-img {
+    background-position: center;
+    background-size: cover;
+    background-image: url('https://vk.com/images/camera_200.png');
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+    margin: 0 auto;
+}
+
+.user-nick {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.user-nick > a {
+    color: #CCC;
+    width: 100%;
+}
+
+.mess-text {
+    width: 100%;
+    min-height: 85px;
+}
+
+.public-date {
+    text-align: right;
+}

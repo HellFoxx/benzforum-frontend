@@ -1,0 +1,19 @@
+.sign-in-content {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-in-form {
+    width: 20vw;
+    background-color: #323233;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.sign-in-form > h1 {
+    text-align: center;
+    padding: 20px 0;
+}

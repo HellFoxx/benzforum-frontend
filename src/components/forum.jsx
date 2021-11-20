@@ -21,6 +21,7 @@ export default function Forum() {
                 {discussions.map(item => {
                     return (
                         <DiscussItem
+                            id = {item.id}
                             title = {item.title}
                             publicDate = {item.public_date}
                             author = {item.author}

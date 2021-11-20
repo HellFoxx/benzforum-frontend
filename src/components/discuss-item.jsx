@@ -1,5 +1,6 @@
 import React from "react";
 import '../css/discuss-item.css'
+import { NavLink } from "react-router-dom";
 
 export default function DiscussItem(props) {
 
@@ -10,7 +11,9 @@ export default function DiscussItem(props) {
         <div className="discuss-item">
             <div className="row">
                 <div className="col-8 title">
-                    <h4><a href="">{props.title}</a></h4>
+                    <h4>
+                        <NavLink to={'/forum/' + props.id}>{props.title}</NavLink> 
+                    </h4>
                 </div>
                 <div className="col-2 date">
                     {dateStr}
