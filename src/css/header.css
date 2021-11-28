@@ -44,5 +44,18 @@
     background-color: #CCC;
     border-color: #CCC;
   }
+
+  .user-header-img {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-image: url("https://vk.com/images/camera_200.png");
+    background-position: center;
+    background-size: contain;
+  }
+
+  .user-profile-link {
+    margin-right: 25px;
+  }
   
   

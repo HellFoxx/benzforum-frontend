@@ -14,7 +14,7 @@ export default function SignUp() {
         passwordRepeat : "",
     });
 
-    let navigate = useNavigate();
+    const navigate = useNavigate();
 
     function submit(e) {
         e.preventDefault();
@@ -27,7 +27,7 @@ export default function SignUp() {
             passwordRepeat : data.passwordRepeat
         })
         .then(res => {   
-            navigate("/news");
+            navigate("/signin");
         })
         .catch(err => {
             console.log(err);
@@ -52,14 +52,14 @@ export default function SignUp() {
                             <div className="user-image-form col-12 mb-3"></div>
 
                             <div className="mb-3 form-item col-12">
-                                <label for="exampleFormControlFile1">Ваше фото</label>
+                                <label htmlFor="exampleFormControlFile1">Ваше фото</label>
                                 <br/>
                                 <input type="file" className="form-control-file" id="exampleFormControlFile1"/>
                             </div>
 
                             <div className="col-3">
                                 <div className="mb-3 form-item">
-                                    <label for="userName" className="form-label">Имя</label>
+                                    <label htmlFor="userName" className="form-label">Имя</label>
                                     <input
                                         type="text"
                                         className="form-control"

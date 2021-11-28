@@ -17,6 +17,13 @@ export default function DiscussPage() {
         });
     }, []);
 
+    let newMessage = React.createRef();
+
+    let addMessage = () => {
+        //let text = newMessage.current.value;
+        //alert(text);
+    }
+
     return (
         <div className="content">
             <div className="container">
@@ -38,10 +45,10 @@ export default function DiscussPage() {
                     <form>
                         <div className="row">
                             <div className="col-5">
-                                <textarea className="form-control" placeholder="Message" id="floatingTextarea2"></textarea>
+                                <textarea className="form-control" placeholder="Message" ref={newMessage}></textarea>
                             </div>
                             <div className="col-1">
-                                <button type="submit" className="btn btn-primary">Submit</button>
+                                <button type="submit" onClick={ addMessage } className="btn btn-primary">Submit</button>
                             </div>
                         </div>
                     </form>

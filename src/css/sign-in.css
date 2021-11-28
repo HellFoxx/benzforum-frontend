@@ -8,12 +8,16 @@
 
 .sign-in-form {
     width: 20vw;
-    background-color: #323233;
-    padding: 20px;
     border-radius: 5px;
 }
 
 .sign-in-form > h1 {
     text-align: center;
     padding: 20px 0;
+}
+
+input[type=text],
+input[type=password] {
+    background-color: #323233;
+    border: none;
 }
