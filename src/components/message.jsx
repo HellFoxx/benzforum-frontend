@@ -1,5 +1,6 @@
 import react from "react";
 import '../css/message.css';
+import { NavLink } from "react-router-dom";
 
 export default function Message(props) {
 
@@ -19,12 +20,12 @@ export default function Message(props) {
                 <div className="col-1">
                     <div className="user-img"></div>
                     <div className="user-nick">
-                        <a href="">{props.author.nickname}</a>
+                        <NavLink to={'/user/' + props.author.id}>{props.author.nickname}</NavLink>
                     </div>
                 </div>
                 <div className="col-11 d-flex flex-column">
                     <div className="mess-text">
-                        <p>{props.text}</p>
+                        <p>{props.msgText}</p>
                     </div>
                     <div className="public-date align-self-end">
                         <span>{dateStr}</span>

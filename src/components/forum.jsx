@@ -2,15 +2,20 @@ import React, {useEffect, useState} from "react";
 import axios from "axios";
 import DiscussItem from "./discuss-item";
 import '../css/forum.css';
+import { useDispatch, useSelector } from "react-redux";
+import { setMessages } from "../redux/messages-slice";
+import { setDiscussions } from "../redux/discussions-slice";
 
 export default function Forum() {
     
-    const [discussions, setDiscussions] = useState([]);
+    const discussions = useSelector(state => state.discussions.discussions);
+    const dispatch = useDispatch();
 
     useEffect(() => {
+        dispatch(setMessages([]));
         axios.get('http://localhost:8081/forum').then(res => {
-            console.log(res.data);
-            setDiscussions(res.data);
+            dispatch(setDiscussions(res.data));
+            console.log(discussions);
         });
     }, []);    
 

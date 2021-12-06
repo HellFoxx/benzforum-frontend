@@ -1,0 +1,91 @@
+.user-page-content {
+    margin-top: 100px;
+}
+
+.user-profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-image: url("https://vk.com/images/camera_200.png");
+}
+
+.nickname-block > h1 {
+    margin: 0;
+}
+
+.nickname-block .badge {
+    background-color: #CCC;
+    color: #323233;
+    padding: 5px;
+    margin-left: 15px;
+}
+
+.user-page-content .exit-profile-btn {
+    margin-left: 10px;
+    color : #DC3545;
+    border-color: #DC3545;
+}
+
+.user-page-content .exit-profile-btn:hover {
+    background-color: #DC3545;
+    color: #CCC;
+}
+
+.user-page-content .modal-content {
+    width: 25%;
+}
+
+.edit-profile {
+    padding: 25px;
+} 
+
+.edit-profile > .close {
+    background: none;
+    border: none;
+    float: right;
+    padding: 0;
+}
+
+.edit-profile > h2 {
+    margin-bottom: 20px;
+}
+
+.edit-profile > .close > span {
+    font-size: 30px;
+    line-height: 0%;
+    color: #CCC;
+}
+
+.edit-profile .form-outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.edit-profile-form {
+    width: 70%;
+}
+
+.edit-profile-form .form-control {
+    background-color: #252526;
+    border: 1px solid transparent;
+    color: #CCC;
+}
+
+.edit-profile-form .wrong {
+    border: 1px solid #DC3545;
+    color: #CCC;
+}
+
+.edit-profile-form > .form-group {
+    margin-bottom: 15px;
+}
+
+.edit-profile-form > .form-group > label {
+    margin-bottom: 5px;
+}
+
+.edit-profile-form > .save-btn {
+    display: flex;
+    margin: 0 auto;
+}

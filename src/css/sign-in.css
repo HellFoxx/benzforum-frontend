@@ -20,4 +20,28 @@ input[type=text],
 input[type=password] {
     background-color: #323233;
     border: none;
+    color: #CCC;
+}
+
+.sign-in-form .enter-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.sign-in-form .enter-btn button {
+    width: 100px;
+}
+
+.sign-in-error {
+    margin: 10px;    
+}
+
+.sign-in-error h1,
+.sign-in-error p {
+    text-align: center;
+}
+
+.sign-in-error p {
+    font-size: 20px;
 }
