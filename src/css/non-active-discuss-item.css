@@ -1,0 +1,19 @@
+.non-active-discuss-item {
+    border: 2px solid #323233;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.non-active-discuss-item:last-child {
+    margin-bottom: 0;   
+}
+
+.non-active-discuss-item .link {
+    text-decoration: none;
+}
+
+.non-active-discuss-item .decline {
+    margin-left: 15px;
+}

@@ -27,6 +27,17 @@ export default function Header() {
         }
     }
 
+    const checkAdmin = () => {
+        if (user.type === "ADMIN") 
+            return (
+                <li className="nav-item">
+                    <NavLink to="/admin" className="nav-link admin-link" >Админ</NavLink> 
+                </li>
+            );
+        else
+            return "";
+    }
+
     return (
         <header className="header">
             <div className="container">
@@ -48,6 +59,7 @@ export default function Header() {
                                 <li className="nav-item">
                                     <NavLink to="/mercedes" className="nav-link disabled" >Мерседес</NavLink> 
                                 </li>
+                                {checkAdmin()}
                         </ul>
                     </div>
                    {checkAuth()} 

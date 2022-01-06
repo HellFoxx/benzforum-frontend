@@ -24,12 +24,20 @@
   .main-menu > .nav {
     margin: auto 0;
   }
-  
+
   .nav-link, .btn, .btn-outline-light {
     color: #CCC;
-  
   }
   
+  .nav-link:focus {
+    border-bottom: 2px solid #CCC;
+    color: #CCC;
+  }
+
+  .nav-link:hover {
+    color: aliceblue;
+  }
+
   .user-btns {
     margin: auto 0;
   
@@ -57,7 +65,23 @@
   }
 
   .user-profile-link {
-    margin-right: 25px;
+    margin-right: 15px;
+    padding: 0;
+  }
+
+  .user-profile-link > .nav-link {
+    padding: 0;
+    text-align: center;
+  }
+
+  .user-profile-link > .nav-link:focus {
+    border-bottom: none;
   }
   
+  .header .admin-link {
+    color: gold;
+  }
   
+  .header .admin-link:focus {
+    border-bottom: 2px solid gold;
+  }

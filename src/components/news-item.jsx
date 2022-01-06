@@ -5,8 +5,8 @@ export default function NewsItem(props) {
     var externReff = React.createRef();
     externReff = props.externReff;
     var text = props.text;
-    if (text.length > 400) 
-        text = text.substr(0,400);
+    if (text.length > 256) 
+        text = text.substr(0,256);
     text = text.concat('...');
 
     const imgStyle = {

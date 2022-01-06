@@ -1,0 +1,30 @@
+.admin {
+    margin-top: 100px;
+}
+
+.admin .admin-block {
+    border: 2px solid #323233;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.admin .admin-block > h2 {
+    margin-bottom: 20px;
+}
+
+.admin .new-news-item input[type=text] {
+    margin-bottom: 15px;
+}
+
+.admin .new-news-item input[type=text]:focus {
+    background-color: #323233;
+    color: #CCC;
+}
+
+.admin .new-news-item textarea {
+    background-color: #323233;
+    color: #CCC;
+    border: none;
+    margin-bottom: 15px;
+}

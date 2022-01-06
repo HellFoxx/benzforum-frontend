@@ -7,6 +7,7 @@ import SignIn from "./components/sign-in";
 import Forum from "./components/forum";
 import DiscussPage from "./components/discuss-page";
 import UserPage from "./components/user-page";
+import Admin from "./components/admin";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { useDispatch, useSelector } from 'react-redux'
 import { authUser } from "./redux/user-slice";
@@ -52,6 +53,7 @@ function App() {
             <Route path = "/forum" element={<Forum/>} />
             <Route path = "/signup" element={<SignUp/>} />
             <Route path = "/signin" element={<SignIn/>} />
+            <Route path = "/admin" element={<Admin/>}/>
             <Route path = "/forum/:id" element={<DiscussPage/>}/>
             <Route path = "/user/:id" element={<UserPage/>}/>
           </Routes>
